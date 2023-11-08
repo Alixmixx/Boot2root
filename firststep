@@ -1,0 +1,10 @@
+┌──(amuller㉿Laptop)-[~/Documents/Boot2root]
+└─$ nmap -sn 192.168.1.0/24       
+Starting Nmap 7.94 ( https://nmap.org ) at 2023-11-08 20:10 CET
+Nmap scan report for BRW4CEBBD48BC97.lan (192.168.1.12)
+Host is up (0.062s latency).
+Nmap scan report for BornToSecHackMe-001.lan (192.168.1.21)
+Host is up (0.00058s latency).
+Nmap scan report for BornToSecHackMe.lan (192.168.1.41)
+Host is up (0.0083s latency).
+Nmap scan report for Laptop.lan (192.168.1.42)

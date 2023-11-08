@@ -1,0 +1,46 @@
+┌──(amuller㉿Laptop)-[~/Documents/Boot2root]
+└─$ sudo nmap -sV -sC -O 192.168.1.21 
+Starting Nmap 7.94 ( https://nmap.org ) at 2023-11-08 20:12 CET
+Nmap scan report for BornToSecHackMe-001.lan (192.168.1.21)
+Host is up (0.00040s latency).
+Not shown: 994 closed tcp ports (reset)
+PORT    STATE SERVICE  VERSION
+21/tcp  open  ftp      vsftpd 2.0.8 or later
+|_ftp-anon: got code 500 "OOPS: vsftpd: refusing to run with writable root inside chroot()".
+22/tcp  open  ssh      OpenSSH 5.9p1 Debian 5ubuntu1.7 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   1024 07:bf:02:20:f0:8a:c8:48:1e:fc:41:ae:a4:46:fa:25 (DSA)
+|   2048 26:dd:80:a3:df:c4:4b:53:1e:53:42:46:ef:6e:30:b2 (RSA)
+|_  256 cf:c3:8c:31:d7:47:7c:84:e2:d2:16:31:b2:8e:63:a7 (ECDSA)
+80/tcp  open  http     Apache httpd 2.2.22 ((Ubuntu))
+|_http-server-header: Apache/2.2.22 (Ubuntu)
+|_http-title: Hack me if you can
+143/tcp open  imap     Dovecot imapd
+|_ssl-date: 2023-11-08T19:13:05+00:00; 0s from scanner time.
+|_imap-capabilities: more have ENABLE LOGINDISABLEDA0001 post-login IMAP4rev1 LOGIN-REFERRALS listed capabilities Pre-login STARTTLS LITERAL+ OK ID SASL-IR IDLE
+| ssl-cert: Subject: commonName=localhost/organizationName=Dovecot mail server
+| Not valid before: 2015-10-08T20:57:30
+|_Not valid after:  2025-10-07T20:57:30
+443/tcp open  ssl/http Apache httpd 2.2.22
+|_ssl-date: 2023-11-08T19:13:05+00:00; 0s from scanner time.
+| ssl-cert: Subject: commonName=BornToSec
+| Not valid before: 2015-10-08T00:19:46
+|_Not valid after:  2025-10-05T00:19:46
+|_http-title: 404 Not Found
+|_http-server-header: Apache/2.2.22 (Ubuntu)
+993/tcp open  ssl/imap Dovecot imapd
+|_imap-capabilities: AUTH=PLAINA0001 ENABLE more have IMAP4rev1 LOGIN-REFERRALS post-login capabilities listed ID LITERAL+ Pre-login OK SASL-IR IDLE
+|_ssl-date: 2023-11-08T19:13:05+00:00; 0s from scanner time.
+| ssl-cert: Subject: commonName=localhost/organizationName=Dovecot mail server
+| Not valid before: 2015-10-08T20:57:30
+|_Not valid after:  2025-10-07T20:57:30
+MAC Address: 08:00:27:51:F9:C8 (Oracle VirtualBox virtual NIC)
+Device type: general purpose
+Running: Linux 3.X
+OS CPE: cpe:/o:linux:linux_kernel:3
+OS details: Linux 3.2 - 3.16
+Network Distance: 1 hop
+Service Info: Host: 127.0.1.1; OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 15.97 seconds

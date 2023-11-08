@@ -1,0 +1,6 @@
+993/tcp open  ssl/imap Dovecot imapd
+|_imap-capabilities: AUTH=PLAINA0001 ENABLE more have IMAP4rev1 LOGIN-REFERRALS post-login capabilities listed ID LITERAL+ Pre-login OK SASL-IR IDLE
+|_ssl-date: 2023-11-08T19:13:05+00:00; 0s from scanner time.
+| ssl-cert: Subject: commonName=localhost/organizationName=Dovecot mail server
+| Not valid before: 2015-10-08T20:57:30
+|_Not valid after:  2025-10-07T20:57:30

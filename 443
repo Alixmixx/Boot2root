@@ -1,0 +1,9 @@
+443/tcp open  ssl/http Apache httpd 2.2.22
+|_ssl-date: 2023-11-08T19:13:05+00:00; 0s from scanner time.
+| ssl-cert: Subject: commonName=BornToSec
+| Not valid before: 2015-10-08T00:19:46
+|_Not valid after:  2025-10-05T00:19:46
+|_http-title: 404 Not Found
+|_http-server-header: Apache/2.2.22 (Ubuntu)
+
+

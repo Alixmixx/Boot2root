@@ -1,0 +1,6 @@
+143/tcp open  imap     Dovecot imapd
+|_ssl-date: 2023-11-08T19:13:05+00:00; 0s from scanner time.
+|_imap-capabilities: more have ENABLE LOGINDISABLEDA0001 post-login IMAP4rev1 LOGIN-REFERRALS listed capabilities Pre-login STARTTLS LITERAL+ OK ID SASL-IR IDLE
+| ssl-cert: Subject: commonName=localhost/organizationName=Dovecot mail server
+| Not valid before: 2015-10-08T20:57:30
+|_Not valid after:  2025-10-07T20:57:30

@@ -1,0 +1,22 @@
+┌──(amuller㉿Laptop)-[~/Documents/Boot2root]
+└─$ dirb https://192.168.1.21 /usr/share/wordlists/dirb/common.txt      
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+START_TIME: Wed Nov  8 21:23:56 2023
+URL_BASE: https://192.168.1.21/
+WORDLIST_FILES: /usr/share/wordlists/dirb/common.txt
+
+-----------------
+
+GENERATED WORDS: 4612                                                          
+
+---- Scanning URL: https://192.168.1.21/ ----
++ https://192.168.1.21/cgi-bin/ (CODE:403|SIZE:289)                                                        
+==> DIRECTORY: https://192.168.1.21/forum/                                                                 
+==> DIRECTORY: https://192.168.1.21/phpmyadmin/                                                            
++ https://192.168.1.21/server-status (CODE:403|SIZE:294)                                                   
+==> DIRECTORY: https://192.168.1.21/webmail/               
