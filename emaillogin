@@ -1,0 +1,135 @@
+┌──(amuller㉿Laptop)-[~/Documents/Boot2root]
+└─$ openssl s_client -connect 192.168.1.21:993
+CONNECTED(00000003)
+Can't use SSL_get_servername
+depth=0 O = Dovecot mail server, OU = localhost, CN = localhost, emailAddress = root@mail.borntosec.net
+verify error:num=18:self-signed certificate
+verify return:1
+depth=0 O = Dovecot mail server, OU = localhost, CN = localhost, emailAddress = root@mail.borntosec.net
+verify return:1
+---
+Certificate chain
+ 0 s:O = Dovecot mail server, OU = localhost, CN = localhost, emailAddress = root@mail.borntosec.net
+   i:O = Dovecot mail server, OU = localhost, CN = localhost, emailAddress = root@mail.borntosec.net
+   a:PKEY: rsaEncryption, 2048 (bit); sigalg: RSA-SHA1
+   v:NotBefore: Oct  8 20:57:30 2015 GMT; NotAfter: Oct  7 20:57:30 2025 GMT
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+MIIDrzCCApegAwIBAgIJAN968TzwGVlvMA0GCSqGSIb3DQEBBQUAMG4xHDAaBgNV
+BAoME0RvdmVjb3QgbWFpbCBzZXJ2ZXIxEjAQBgNVBAsMCWxvY2FsaG9zdDESMBAG
+A1UEAwwJbG9jYWxob3N0MSYwJAYJKoZIhvcNAQkBFhdyb290QG1haWwuYm9ybnRv
+c2VjLm5ldDAeFw0xNTEwMDgyMDU3MzBaFw0yNTEwMDcyMDU3MzBaMG4xHDAaBgNV
+BAoME0RvdmVjb3QgbWFpbCBzZXJ2ZXIxEjAQBgNVBAsMCWxvY2FsaG9zdDESMBAG
+A1UEAwwJbG9jYWxob3N0MSYwJAYJKoZIhvcNAQkBFhdyb290QG1haWwuYm9ybnRv
+c2VjLm5ldDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMpjPQ2I6YkN
+jZpxkEjfw7XxZhr+oKwqvb4Uc6CEHzrY4z/zG/HsZ/cgNLgYkLevEf0+DIPliYSG
+o7yht28wbyW1GZGBvh5wYBRfJm8BDc5iyyuayQGxAOKXmgycv58jVvr4kuF0P0xW
+5vBHxzfDF1AXB2qNKg1h5oc6My1ox6E8THSxUrCwzG2b4I8qdpiAkI/G+My8U5kQ
+fSkL5OnKZ5Z1+pY3L9PzpNM6RJmx53ffi9jBlHnQ+TVTOzx72nqyKgR/at5P/O4W
+SxxMztVY6d8ejaA0MQEcIjEQdTXFyCnfj1mHXRHpHaCQ6iVvkbJwJmKEWVXjcERo
+IVMik7zn4hMCAwEAAaNQME4wHQYDVR0OBBYEFA4UxwArd2vFwnkguZAOlIz01Qqs
+MB8GA1UdIwQYMBaAFA4UxwArd2vFwnkguZAOlIz01QqsMAwGA1UdEwQFMAMBAf8w
+DQYJKoZIhvcNAQEFBQADggEBAKuoOkJBTDFjE6a066CPXQ6ulE6siN1B+nw95NnO
+N/RZrjEkEr24HAFJxn1zXgjEhlYToJgTNTCGLpOKr0weFEJcTiZLNuh7v++WLIM5
+YBpwscnbxL+2ak9PLbGGVyq+RrX3RTzD5t6WZChwxCPqcNORB9pQknO9a7qG9kpl
+0ljGwg/xYvY+tETYBSz88Wy053Dq+4on5tzkeLOxVi1WSA3XxdbQrS5kmfGCCIVi
+Phl8QItIxBdZGoOY2niOszqDU4gaqKsx7wcIsDcKoXl2lNutwV8Eb/HLBo8KBXjr
+u3axYWy9JvJQkowL0Z5oHss3a2J3ErljjQLUlUFR6sd+tz0=
+-----END CERTIFICATE-----
+subject=O = Dovecot mail server, OU = localhost, CN = localhost, emailAddress = root@mail.borntosec.net
+issuer=O = Dovecot mail server, OU = localhost, CN = localhost, emailAddress = root@mail.borntosec.net
+---
+No client certificate CA names sent
+Peer signing digest: SHA256
+Peer signature type: RSA
+Server Temp Key: DH, 1024 bits
+---
+SSL handshake has read 1787 bytes and written 613 bytes
+Verification error: self-signed certificate
+---
+New, TLSv1.2, Cipher is DHE-RSA-AES256-GCM-SHA384
+Server public key is 2048 bit
+Secure Renegotiation IS supported
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+SSL-Session:
+    Protocol  : TLSv1.2
+    Cipher    : DHE-RSA-AES256-GCM-SHA384
+    Session-ID: 913A636A5FA5105CF26C60ECAC5E149E913FB6D23D359544D80C50E9CE8B0AA6
+    Session-ID-ctx: 
+    Master-Key: 5CA614C28B9A2BF6442B5C07E8E34C303CF29E0BC1D1C5C634B16E50F16B955DDCC6696D163C6A560A8BD8095C3FA890
+    PSK identity: None
+    PSK identity hint: None
+    SRP username: None
+    TLS session ticket lifetime hint: 300 (seconds)
+    TLS session ticket:
+    0000 - 58 b0 b8 4f 25 30 e2 3f-54 38 94 4e 61 97 75 61   X..O%0.?T8.Na.ua
+    0010 - ea 78 32 07 2f 94 5c 7f-c2 2a 5a c9 fa b4 2d e3   .x2./.\..*Z...-.
+    0020 - c3 1d f4 8f 3b 9e 10 a0-f0 0f d5 a6 73 e7 c8 f8   ....;.......s...
+    0030 - 93 9f e3 03 c2 7a 8e 53-ac 2a 77 a6 58 6f b4 c3   .....z.S.*w.Xo..
+    0040 - 18 9a 62 ae 9a 26 6d f4-35 aa 24 8c be ac e1 db   ..b..&m.5.$.....
+    0050 - 38 7a 78 f4 e5 3d f5 00-37 50 e2 dc ba fe fb 44   8zx..=..7P.....D
+    0060 - 08 cf 5c e8 e6 cd 95 41-f1 54 42 8b d8 eb 74 d4   ..\....A.TB...t.
+    0070 - 36 ba 24 47 c0 92 17 9e-ab 0c 1f 02 78 50 d3 88   6.$G........xP..
+    0080 - 3c 93 00 78 94 a3 5d ca-e8 f1 9d 49 52 c4 19 91   <..x..]....IR...
+    0090 - 90 70 5b bd d7 83 c3 36-d1 a3 d3 8d 03 5c 8b 5e   .p[....6.....\.^
+
+    Start Time: 1699476471
+    Timeout   : 7200 (sec)
+    Verify return code: 18 (self-signed certificate)
+    Extended master secret: no
+---
+* OK [CAPABILITY IMAP4rev1 LITERAL+ SASL-IR LOGIN-REFERRALS ID ENABLE IDLE AUTH=PLAIN] Dovecot ready.
+A1 LOGIN laurie@borntosec.net !q\]Ej?*5K5cy*AJ
+A1 OK [CAPABILITY IMAP4rev1 LITERAL+ SASL-IR LOGIN-REFERRALS ID ENABLE IDLE SORT SORT=DISPLAY THREAD=REFERENCES THREAD=REFS MULTIAPPEND UNSELECT CHILDREN NAMESPACE UIDPLUS LIST-EXTENDED I18NLEVEL=1 CONDSTORE QRESYNC ESEARCH ESORT SEARCHRES WITHIN CONTEXT=SEARCH LIST-STATUS] Logged in
+LIST "" *
+LIST BAD Error in IMAP command "": Unknown command.
+A1 LIST "" *
+* LIST (\NoInferiors \UnMarked) "/" "INBOX.Drafts"
+* LIST (\NoInferiors \UnMarked) "/" "INBOX.Sent"
+* LIST (\NoInferiors \UnMarked) "/" "INBOX.Trash"
+* LIST (\NoInferiors \UnMarked) "/" "INBOX"
+A1 OK List completed.
+A1 SELECT INBOX
+* FLAGS (\Answered \Flagged \Deleted \Seen \Draft)
+* OK [PERMANENTFLAGS (\Answered \Flagged \Deleted \Seen \Draft \*)] Flags permitted.
+* 2 EXISTS
+* 0 RECENT
+* OK [UIDVALIDITY 1444339105] UIDs valid
+* OK [UIDNEXT 3] Predicted next UID
+* OK [HIGHESTMODSEQ 1] Highest
+A1 OK [READ-WRITE] Select completed.
+A1 FETCH 1 BODY[]
+A1 FETCH 2 BODY[]
+* 2 FETCH (BODY[] {927}
+Return-Path: <qudevide@mail.borntosec.net>
+X-Original-To: laurie@borntosec.net
+Delivered-To: laurie@borntosec.net
+Received: from [192.168.1.8] (localhost [127.0.0.1])
+	by localhost (Postfix) with ESMTP id 56D4660442
+	for <laurie@borntosec.net>; Thu,  8 Oct 2015 23:25:25 +0200 (CEST)
+Received: from 192.168.1.22
+        (SquirrelMail authenticated user qudevide@mail.borntosec.net)
+        by 192.168.1.8 with HTTP;
+        Thu, 8 Oct 2015 23:25:25 +0200
+Message-ID: <e231e4a59416c44fd367fc5eeff1e8f5.squirrel@192.168.1.8>
+Date: Thu, 8 Oct 2015 23:25:25 +0200
+Subject: DB Access
+From: qudevide@mail.borntosec.net
+To: laurie@borntosec.net
+User-Agent: SquirrelMail/1.4.22
+MIME-Version: 1.0
+Content-Type: text/plain;charset=iso-8859-1
+Content-Transfer-Encoding: 8bit
+X-Priority: 3 (Normal)
+Importance: Normal
+
+Hey Laurie,
+
+You cant connect to the databases now. Use root/Fg-'kKXBj87E:aJ$
+
+Best regards.
+)
+A1 OK Fetch completed.

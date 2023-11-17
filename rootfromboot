@@ -1,0 +1,11 @@
+https://github.com/nodiscc/debian-live-config/blob/master/config/bootloaders/isolinux/live.cfg.in
+
+https://forum.ubuntu-fr.org/viewtopic.php?id=82752
+
+https://www.linuxquestions.org/questions/linux-newbie-8/when-do-we-need-init%3D-bin-bash-in-kernel-boot-parameter-4175591508/
+
+first get in the boot loader menu by holding shift a boot
+
+then put
+
+live init=/bin/bash
