@@ -2,6 +2,7 @@
 
 tar -xf fun
 
+
 for file in ./ft_fun/*.pcap
 do
     last_line=$(tail -n 1 $file)
@@ -19,13 +20,13 @@ done
 cat ./ft_fun/file750 >> ./ft_fun/output.txt
 rm ./ft_fun/file750
 
-cat ft_fun/output.txt | grep Now | grep -o '"[^"]*"' > password.txt
+cat ft_fun/output.txt | grep Now | grep -o '"[^"]*"' > flag.txt
 string=$(cat ft_fun/output.txt | grep return | rev | cut -c 3 | rev | tr -d '\n') 
 
-echo $string >> password.txt
+echo $string >> flag.txt
 
 hash_value=$(echo -n "$string" | openssl sha256)
 
-echo "SHA-256 hash of \"$string\":" >> password.txt
-echo "$hash_value" >> password.txt
-cat password.txt
+echo "SHA-256 hash of \"$string\":" >> flag.txt
+echo "$hash_value" >> flag.txt
+
