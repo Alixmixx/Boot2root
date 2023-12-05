@@ -129,6 +129,7 @@ void phase_6(char *inputString)
 {
 	int inputNumbers[6];
 	Node *nodeArray[6];
+	Node *firstNode;
 	Node *currentNode;
 	Node *nextNode;
 
@@ -152,6 +153,7 @@ void phase_6(char *inputString)
 	}
 
 	currentNode = nodeArray[0];
+	firstNode = currentNode;
 	for (int i = 1; i < 6; i++)
 	{
 		nextNode = nodeArray[i];
@@ -159,9 +161,10 @@ void phase_6(char *inputString)
 		currentNode = nextNode;
 	}
 
+	currentNode = firstNode;
 	for (int i = 0; i < 5; i++)
 	{
-		if (nodeArray[i]->value > nodeArray[i]->next->value)
+		if (currentNode->value > currentNode->next->value)
 			explode_bomb();
 		currentNode = currentNode->next;
 	}

