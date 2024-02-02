@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository contains my solutions for the BornToSecHackMe challenge. The challenge involved gaining root access to a server using various methods. This document details the approaches used, the tools developed, and the insights gained during the project. All the solutions are explained in the writeup.pdf
+This repository contains our solutions for the BornToSecHackMe challenge. The challenge involved gaining root access to a server using various methods. This document details the approaches used, the tools developed, and the insights gained during the project. All the solutions are explained in the writeup.pdf
 
 ## Contents
 
@@ -16,3 +16,7 @@ This repository contains my solutions for the BornToSecHackMe challenge. The cha
 - This project is for educational purposes only. The techniques used should not be applied in unauthorized environments.
 
 *Note: Always ensure that your methods and tools comply with ethical guidelines and are used in a legal context only.*
+
+## Contributions
+This project was made in collaboration with Lorenzo Edoardo Francesco. His invaluable contributions, encompassing insights, expertise, and dedication, were instrumental to the success of this project. His innovative problem-solving skills have been inspiring. I am immensely grateful for the knowledge and experience gained through this collaboration.
+- [Lorenzo Edoardo Francesco](https://github.com/lorenzoedoardofrancesco)
